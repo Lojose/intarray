@@ -23,8 +23,8 @@ IntArray::~IntArray() {
     
 }
 
-IntArray::IntArray(int size) { // constructor 
-    len = size; // thus -> = n; n(n)
+IntArray::IntArray(int size) {  
+    len = size;
     data = new int[len]; 
 }
 
@@ -43,7 +43,7 @@ void IntArray::fill(int k) {
 
 }
 
-int * IntArray::begin() {
+int *IntArray::begin() {
     return data; 
 
  }
@@ -73,7 +73,7 @@ int main() {
     assert(a[0] == 1);
     assert(a[1] == 2);
     assert(a[2] == 3);
-   int * it = a.begin();
+	int * it = a.begin();
     assert(*it == 1);
     ++it;
     assert(*it == 2);
